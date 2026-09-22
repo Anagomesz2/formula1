@@ -1,14 +1,11 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    /* Uso de cor em RGB conforme solicitado */
+    font-family: sans-serif;
     background-color: rgb(235, 240, 246);
-    /* Uso de cor Hexadecimal conforme solicitado */
     color: #1A1D20;
     margin: 0;
     padding: 0;
 }
 
-/* --- CABEÇALHO --- */
 #cabecalho-principal {
     display: flex;
     justify-content: flex-start;
@@ -16,16 +13,14 @@ body {
     gap: 20px;
     background-color: #0F172A;
     color: rgb(255, 255, 255);
-    padding: 20px 40px;
-    flex-wrap: wrap;
+    padding: 20px;
 }
 
 #cabecalho-principal h1 {
     font-size: 28px;
     font-weight: 900;
     margin: 0;
-    /* Move o título para o lado direito no flex */
-    margin-left: auto; 
+    margin-left: auto;
 }
 
 #cabecalho-principal small {
@@ -43,7 +38,6 @@ body {
     cursor: pointer;
 }
 
-/* --- CONTEÚDO PRINCIPAL --- */
 main {
     padding: 40px;
 }
@@ -83,13 +77,12 @@ main {
     object-fit: cover;
 }
 
-/* --- SEÇÃO DE PERSONAGENS (FLEX-WRAP PARA ORGANIZAÇÃO) --- */
 #personagens {
     display: flex;
     justify-content: space-between;
     align-items: stretch;
     gap: 20px;
-    flex-wrap: wrap; /* Mantém os cards organizados em linhas */
+    flex-wrap: wrap;
 }
 
 #personagens h2 {
@@ -100,16 +93,14 @@ main {
     margin-bottom: 10px;
 }
 
-/* --- CARDS DOS PILOTOS --- */
 .card {
     background-color: rgb(255, 255, 255);
-    /* Garante 3 cards por linha mantendo o gap de 20px */
-    width: calc(33.333% - 14px); 
+    width: calc(33.333% - 14px);
     border-radius: 8px;
     padding: 15px;
     box-sizing: border-box;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .card img {
@@ -122,7 +113,6 @@ main {
     font-size: 18px;
     font-weight: 700;
     color: #0F172A;
-    margin: 15px 0 8px 0;
 }
 
 .card p {
@@ -133,7 +123,6 @@ main {
     line-height: 1.4;
 }
 
-/* --- RODAPÉ --- */
 footer {
     background-color: #0F172A;
     color: rgb(255, 255, 255);
